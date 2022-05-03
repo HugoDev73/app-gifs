@@ -1,0 +1,19 @@
+<div class="bg-light border-right p-3" id="sidebar">
+  <h2 class="text-dark">Buscar Gifs</h2>
+  <hr class="text-dark" />
+  <div class="">
+    <h3 href="#" class=" text-center">
+      Historial
+    </h3>
+  </div>
+  <div class="list-group list-reset mt-2">
+    <a
+      *ngFor="let item of historial"
+      href="#"
+      (click)="buscar(item)"
+      class="list-group-item list-group-item-action text-center bg-dark text-white m-1"
+    >
+      {{ item | titlecase}}</a
+    >
+  </div>
+</div>
